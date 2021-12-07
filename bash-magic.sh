@@ -33,9 +33,9 @@ usage() {
 #
 # Steps:
 # 1. Type a command which produces a lit of string (space or newline limited)
-# 2. Mark the command by prefixing it with "#list"
+# 2. Mark the command by postfixing it with "#list"
 # 3. Type a command you want to loop on with \$var variable
-# 4. Mark the commane bu prefixing it with "#loop"
+# 4. Mark the commane bu postfixing it with "#loop"
 # 5. Run the function: 
 #
 #     generateMagicFn 
