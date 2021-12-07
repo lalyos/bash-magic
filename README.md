@@ -30,3 +30,8 @@ aws ec2 describe-instances \
 
 generateMagicFn
 ```
+
+Now the function is generated and you can reuse as:
+```
+magicFn
+```
