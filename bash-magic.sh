@@ -5,7 +5,7 @@ findlast () {
     declare pattern=$1
     : ${pattern:?required}
 
-    command=$(history | sed -n "/${lastcmd:-.}/,$ p"| grep -v 'NOTTHIS' | grep "#${1}" | tail -1 | sed "s/^.*#${1} *//")
+    command=$(history -p '!?#'${pattern}'?'| sed "s/#${pattern} *//")
     [[ $command ]] && echo $command || echo ':'
 }
 
